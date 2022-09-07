@@ -4,7 +4,6 @@
 
 export APPDIR="${APPDIR:-"$(dirname "$(realpath "$0")")"}" # Workaround to run extracted AppImage
 export PATH="${APPDIR}/usr/bin":$PATH
-#echo "PATH=$PATH"
 
 #=== From linuxdeploy-plugin-gtk.sh
 
@@ -42,8 +41,8 @@ export OFX_DTD_PATH="${APPDIR}/usr/share/libofx7/libofx/dtd"
 export GNC_DBD_DIR="${APPDIR}/usr/lib/x86_64-linux-gnu/dbd"
 #export GNC_DEBUG=yes
 
-${APPDIR}/usr/bin/python3 -m venv pyenv
-source ${APPDIR}/pyenv/bin/activate
+${APPDIR}/usr/bin/python3 -m venv "${CACHEDIR}/pyenv"
+source ${CACHEDIR}/pyenv/bin/activate
 
 which python
 
