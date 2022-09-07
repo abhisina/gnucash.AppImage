@@ -31,5 +31,5 @@ jobs:
         allowUpdates: True
         tag: ${{ github.ref_name }}
         name: "Release build (${{ github.ref_name }})"
-        artifacts: "*.AppImage"
+        artifacts: "GnuCash-*.AppImage"
         token: ${{ secrets.GITHUB_TOKEN }}
