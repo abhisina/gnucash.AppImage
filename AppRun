@@ -44,6 +44,4 @@ export GNC_DBD_DIR="${APPDIR}/usr/lib/x86_64-linux-gnu/dbd"
 ${APPDIR}/usr/bin/python3 -m venv "${CACHEDIR}/pyenv"
 source ${CACHEDIR}/pyenv/bin/activate
 
-which python
-
 exec "${APPDIR}/usr/bin/gnucash" "$@"
