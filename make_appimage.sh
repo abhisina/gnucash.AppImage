@@ -122,7 +122,7 @@ pushd "${Python_Build_Dir}/${Python_Package_Name}"
 mkdir -p "${Python_Cache_Dir}"
 mkdir -p "${Python_Interm_Install_Dir}"
 
-./configure --cache-file="${Python_Cache_Dir}/python.config.cache" --prefix="${Python_Interm_Install_Dir}" --enable-ipv6 --enable-loadable-sqlite-extensions --enable-shared --with-threads --without-ensurepip --enable-optimizations
+./configure --cache-file="${Python_Cache_Dir}/python.config.cache" --prefix="${Python_Interm_Install_Dir}" --enable-ipv6 --enable-loadable-sqlite-extensions --enable-shared --without-ensurepip --enable-optimizations
 make -s -j$(nproc)
 make -s install
 
